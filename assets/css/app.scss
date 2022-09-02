@@ -4,7 +4,9 @@ $brand-green: #0e2d16;
 $brand-light-beige: #aba097;
 $brand-yellowish: #b1a285;
 $brand-purple: #93c;
-$brand-blue: #0d47a1
+$brand-blue: #0d47a1;
+$brand-red: #c00;
+$rgba-white-strong: rgba(255, 255, 255, 0.7);
 $brand-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
 @mixin background($height){
@@ -187,6 +189,36 @@ body, h1 ,h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
           font-weight: lighter;
         }
       }
+    }
+  }
+}
+
+#frontMap{
+  position: relative;
+
+  #map{
+    height: 500px;
+  }
+
+  .contact-us{
+    color: #000;
+    position: absolute;
+    font-size: 1.1rem;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    height: auto;
+    background-color: $rgba-white-strong;
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+
+    a{
+      color: $brand-red;
+    }
+
+    &:hover{
+      background-color: #fff;
+      box-shadow: $brand-shadow;
     }
   }
 }

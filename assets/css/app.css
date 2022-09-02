@@ -136,4 +136,50 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
   height: 13rem;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+}
+#frontLatest .latest-posts .latest-post-text a,
+#frontLatest .latest-posts .latest-review-text a,
+#frontLatest .latest-reviews .latest-post-text a,
+#frontLatest .latest-reviews .latest-review-text a {
+  text-decoration: none;
+  color: #0d47a1;
+}
+#frontLatest .latest-posts .latest-post-text a:hover,
+#frontLatest .latest-posts .latest-review-text a:hover,
+#frontLatest .latest-reviews .latest-post-text a:hover,
+#frontLatest .latest-reviews .latest-review-text a:hover {
+  color: #2674ee;
+}
+#frontLatest .latest-posts .latest-post-text p,
+#frontLatest .latest-posts .latest-review-text p,
+#frontLatest .latest-reviews .latest-post-text p,
+#frontLatest .latest-reviews .latest-review-text p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+#frontMap {
+  position: relative;
+}
+#frontMap #map {
+  height: 500px;
+}
+#frontMap .contact-us {
+  color: #000;
+  position: absolute;
+  font-size: 1.1rem;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 3;
+  transition: 0.5s ease-in-out;
+}
+#frontMap .contact-us a {
+  color: #c00;
+}
+#frontMap .contact-us:hover {
+  background-color: #fff;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=app.css.map */
