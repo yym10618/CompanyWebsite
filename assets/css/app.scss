@@ -8,13 +8,20 @@ $brand-blue: #0d47a1;
 $brand-red: #c00;
 $brand-beige: #807060;
 $rgba-white-strong: rgba(255, 255, 255, 0.7);
+$rgba-black-light: rgba(0, 0, 0, 0.35);
 $brand-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-@mixin background($height){
+@mixin background($height: 60vh){
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: $height;
+}
+
+@mixin overlay($bgColor: $rgba-black-light){
+  height: 100%;
+  width: 100%;
+  background-color: $bgColor;
 }
 
 body, h1 ,h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, span, small {
@@ -257,4 +264,53 @@ body, h1 ,h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
         margin-top: 1rem;
       }
     }
+}
+
+/* page */
+#topBanner{
+  @include background;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: $brand-shadow;
+
+  .overlay{
+    @include overlay;
+    color: #fff;
+    border-radius: 0.75rem;
+  }
+}
+
+#blogContent{
+  .grid-item{
+    .card{
+      margin-bottom: 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover{
+        box-shadow: $brand-shadow;
+        transform: translateY(-8px);
+      }
+
+      .post-featured{
+        @include background(12rem);
+      }
+
+      .post-text{
+        .img-avartar{
+          width: 18px;
+          border-radius: 50%;
+        }
+      }
+
+      a{
+        color: $brand-blue;
+        transition: 0.3s ease;
+
+        &:hover{
+          color: ligten($brand-blue, 20%);
+        }
+      }
+    }
+  }
 }
