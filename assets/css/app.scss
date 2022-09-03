@@ -6,6 +6,7 @@ $brand-yellowish: #b1a285;
 $brand-purple: #93c;
 $brand-blue: #0d47a1;
 $brand-red: #c00;
+$brand-beige: #807060;
 $rgba-white-strong: rgba(255, 255, 255, 0.7);
 $brand-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
@@ -221,4 +222,39 @@ body, h1 ,h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
       box-shadow: $brand-shadow;
     }
   }
+}
+
+#footer{
+  background-color: $brand-beige;
+  color: #fff;
+
+  .nav-footer{
+    a{
+      font-size: 1.1rem;
+    }
+  }
+  
+  .footer-informations{
+      p{
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      .social{
+        margin-top: 0.75rem;
+        display: inline-block;
+
+        img{
+          width: 2.25rem;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .copyright{
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin-top: 1rem;
+      }
+    }
 }
