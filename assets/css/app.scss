@@ -314,3 +314,13 @@ body, h1 ,h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
     }
   }
 }
+
+/* Post */
+#postContent{
+  .post-meta{
+    .img-avatar{
+      width: 24px;
+      border-radius: 50%;
+    }
+  }
+}

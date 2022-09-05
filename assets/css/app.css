@@ -253,4 +253,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li, button, input, textarea, select, spa
 }
 #blogContent .grid-item .card a:hover {
   color: ligten(#0d47a1, 20%);
+}
+
+/* Post */
+#postContent .post-meta .img-avatar {
+  width: 24px;
+  border-radius: 50%;
 }/*# sourceMappingURL=app.css.map */
