@@ -11,13 +11,53 @@
 </head>
 <body>
   <header id="header" class="wrapper">
+    <!-- Modal -->
+    <div class="modal fade" id="ourModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="ourModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ourModal>Modal title">Contact us!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="yourName" class="form-label">Your name</label>
+                <input type="text" id="yourName" class="form-control" placeholder="Your name">
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="yourPhone" class="form-label">Your name</label>
+                <input type="tel" id="yourPhone" class="form-control" placeholder="010-111-1111">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="yourEmail" class="form-label">Email address</label>
+                <input type="email" id="yourEmail" class="form-control" placeholder="you@email.com">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="yourTextarea" class="form-label">Write what you want</label>
+                <textarea name="" id="yourTextarea" cols="30" rows="3" class="form-control" placeholder="Write what you want"></textarea>
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" id="yourFormCheck" class="form-check-input">
+                <label for="yourFormCheck" class="form-check-label">
+                  I agree to provide privacy.
+                </label>
+              </div>
+              <button class="btn btn-secondary" type="submit">Send!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Header -->
     <section id="navTop" class="nav-top py-2 d-none-md-block">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-3 text-start lead fast-counsel">
-            <a href="#" class="btn btn-outline-dark">Contact</a>
+            <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#ourModal" role="button">Contact</a>
           </div>
           <div class="col-4 logo">
             <a href="index.html" class="navbar-brand d-flex">
